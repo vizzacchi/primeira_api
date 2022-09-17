@@ -20,9 +20,6 @@ app.get('/', (req, res) => {
 });
 
 
-
-
-
-app.listen(21262,() => { 
+app.listen(() => { 
     console.log(`Express new started at http://localhost:21262`)
 })
