@@ -18,8 +18,8 @@ let db = [
 app.get('/', (req, res) => {
     return res.json(db);
 });
+const port = process.env.PORT || 3000;
 
-
-app.listen(() => { 
-    console.log(`Express new started at http://localhost:21262`)
+app.listen(port,() => { 
+    console.info(`Express new started at http://localhost:21262`)
 })
